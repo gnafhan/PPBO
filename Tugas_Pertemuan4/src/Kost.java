@@ -8,6 +8,10 @@ public class Kost {
     static Integer kapasitasParkir = 22;
     public static final Integer KAPASITAS_KOST = 8;
 
+    public void setNamaKost(String namaKost) {
+        this.namaKost = namaKost;
+    }
+
     public void tambahPenghuni(Mahasiswa mahasiswa){
         if (validasiKendaraan(mahasiswa) && validasiSize()) {
             kapasitasParkir -= mahasiswa.getSizeKendaraan();

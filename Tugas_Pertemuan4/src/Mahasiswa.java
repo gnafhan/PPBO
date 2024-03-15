@@ -8,12 +8,7 @@ public class Mahasiswa {
     static enum Kendaraan{
         MOTOR, MOBIL
     }
-    public Mahasiswa(String nama, String universitas, Kendaraan kendaraan){
-        this.nama = nama;
-        this.universitas = universitas;
-        this.kendaraan = kendaraan;
-        this.sizeKendaraan = (Kendaraan.valueOf(kendaraan.toString()).ordinal() +1) *2;
-    }
+    public Mahasiswa(){}
 
     public String getNama() {
         return nama;
@@ -53,6 +48,7 @@ public class Mahasiswa {
 
     public void setKendaraan(Kendaraan kendaraan) {
         this.kendaraan = kendaraan;
+        this.sizeKendaraan = (Kendaraan.valueOf(kendaraan.toString()).ordinal() +1) *2;
     }
 
     @Override

@@ -1,17 +1,48 @@
 public class Main {
     public static void main(String[] args) {
         Kost kost1 = new Kost();
-        Mahasiswa mahasiswa1 = new Mahasiswa("Bude", "UI",  Mahasiswa.Kendaraan.MOTOR);
-        Mahasiswa mahasiswa2 = new Mahasiswa("Fulan", "UGM",  Mahasiswa.Kendaraan.MOBIL);
-        Mahasiswa mahasiswa3 = new Mahasiswa("Fulanah", "UGM",  Mahasiswa.Kendaraan.MOBIL);
-        Mahasiswa mahasiswa4 = new Mahasiswa("Ali", "ITB",  Mahasiswa.Kendaraan.MOTOR);
-        Mahasiswa mahasiswa5 = new Mahasiswa("Citra", "ITS",  Mahasiswa.Kendaraan.MOTOR);
-        Mahasiswa mahasiswa6 = new Mahasiswa("Dewi", "Unpad",  Mahasiswa.Kendaraan.MOBIL);
-        Mahasiswa mahasiswa7 = new Mahasiswa("Eko", "UI",  Mahasiswa.Kendaraan.MOTOR);
-        Mahasiswa mahasiswa8 = new Mahasiswa("Fitri", "UGM",  Mahasiswa.Kendaraan.MOBIL);
-        Mahasiswa mahasiswa9 = new Mahasiswa("Guntur", "ITB",  Mahasiswa.Kendaraan.MOTOR);
-        Mahasiswa mahasiswa10 = new Mahasiswa("Hani", "UI",  Mahasiswa.Kendaraan.MOBIL);
-        Mahasiswa mahasiswa11 = new Mahasiswa("Iwan", "UGM",  Mahasiswa.Kendaraan.MOTOR);
+        kost1.setNamaKost("Kost 1");
+        Mahasiswa mahasiswa1 = new Mahasiswa();
+        mahasiswa1.setNama("Doni");
+        mahasiswa1.setUniversitas("UGM");
+        mahasiswa1.setKendaraan(Mahasiswa.Kendaraan.MOBIL);
+        Mahasiswa mahasiswa2 = new Mahasiswa();
+        mahasiswa2.setNama("Fulan");
+        mahasiswa2.setUniversitas("UGM");
+        mahasiswa2.setKendaraan(Mahasiswa.Kendaraan.MOBIL);
+        Mahasiswa mahasiswa3 = new Mahasiswa();
+        mahasiswa3.setNama("Fulanah");
+        mahasiswa3.setUniversitas("UGM");
+        mahasiswa3.setKendaraan(Mahasiswa.Kendaraan.MOBIL);
+        Mahasiswa mahasiswa4 = new Mahasiswa();
+        mahasiswa4.setNama("Ali");
+        mahasiswa4.setUniversitas("ITB");
+        mahasiswa4.setKendaraan(Mahasiswa.Kendaraan.MOTOR);
+        Mahasiswa mahasiswa5 = new Mahasiswa();
+        mahasiswa5.setNama("Citra");
+        mahasiswa5.setUniversitas("ITS");
+        mahasiswa5.setKendaraan(Mahasiswa.Kendaraan.MOTOR);
+        Mahasiswa mahasiswa6 = new Mahasiswa();
+        mahasiswa6.setNama("Dewi");
+        mahasiswa6.setUniversitas("Unpad");
+        mahasiswa6.setKendaraan(Mahasiswa.Kendaraan.MOBIL);
+        Mahasiswa mahasiswa7 = new Mahasiswa();
+        mahasiswa7.setNama("Eko");
+        mahasiswa7.setUniversitas("UI");
+        mahasiswa7.setKendaraan(Mahasiswa.Kendaraan.MOTOR);
+        Mahasiswa mahasiswa8 = new Mahasiswa();
+        mahasiswa8.setNama("Fitri");
+        mahasiswa8.setUniversitas("UGM");
+        mahasiswa8.setKendaraan(Mahasiswa.Kendaraan.MOBIL);
+        Mahasiswa mahasiswa9 = new Mahasiswa();
+        mahasiswa9.setNama("Guntur");
+        mahasiswa9.setUniversitas("ITB");
+        mahasiswa9.setKendaraan(Mahasiswa.Kendaraan.MOTOR);
+        Mahasiswa mahasiswa10 = new Mahasiswa();
+        mahasiswa10.setNama("Hani");
+        mahasiswa10.setUniversitas("UI");
+        mahasiswa10.setKendaraan(Mahasiswa.Kendaraan.MOBIL);
+        Mahasiswa mahasiswa11 = new Mahasiswa();
 
         kost1.tambahPenghuni(mahasiswa1);
         kost1.tambahPenghuni(mahasiswa2);
@@ -29,7 +60,10 @@ public class Main {
         kost1.hapusPenghuni(mahasiswa1);
         kost1.tambahPenghuni(mahasiswa11);
 
-        Mahasiswa mahasiswaKunjung1 = new Mahasiswa("Budi", "UGM",  Mahasiswa.Kendaraan.MOTOR);
+        Mahasiswa mahasiswaKunjung1 = new Mahasiswa();
+        mahasiswaKunjung1.setNama("Iwan");
+        mahasiswaKunjung1.setUniversitas("UGM");
+        mahasiswaKunjung1.setKendaraan(Mahasiswa.Kendaraan.MOTOR);
         kost1.berkunjung(mahasiswaKunjung1);
 
         kost1.hapusPenghuni(mahasiswaKunjung1);
