@@ -35,5 +35,6 @@ public class Rak {
         Validation.isIndexIsNotExist(rakObat, index);
         Validation.isStockEnough(rakObat[index], jumlah);
         rakObat[index].setStok(rakObat[index].getStok()-jumlah);
+        System.out.println("Obat berhasil dibeli");
     }
 }
