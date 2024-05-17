@@ -7,10 +7,10 @@ public class MobilAngkutan extends Mobil{
     @Override
     public void tambahGigi() {
         if (!this.isDikopling) return;
+        this.gigi++;
         if (this.gigi > 6){
             this.gigi = 6;
         }
-        this.gigi++;
         System.out.println("Gigi saat ini: " + this.gigi);
     }
 

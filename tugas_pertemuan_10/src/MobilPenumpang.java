@@ -8,10 +8,10 @@ public class MobilPenumpang extends Mobil  {
     @Override
     public void tambahGigi() {
         if (!this.isDikopling && this.tipe == TipeMobilPenumpang.REGULAR) return;
+        this.gigi++;
         if (this.gigi > 5){
             this.gigi = 5;
         }
-        this.gigi++;
         System.out.println("Gigi saat ini: " + this.gigi);
     }
 
